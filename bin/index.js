@@ -1,7 +1,7 @@
 #! /usr/bin/env node
 
 const yargs = require('yargs');
-const cli = require('./cli.js');
+const {cli } = require('./cli.js');
 
 const MAX_POSTS = 100;
 

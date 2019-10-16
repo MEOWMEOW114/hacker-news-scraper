@@ -2,30 +2,25 @@
 
 cmd
 
-## steps:
+## setup steps:
 
-1. brew install node
-1. window : install Chocolatey
-1. \$ npm install -g yarn
-1. \$ yarn add
-1. \$ yarn link
+. mac: `brew install node`
+. window : `install Chocolatey`
+
+2. \$ `npm install -g yarn`
+3. \$ `yarn add`
+4. \$ `yarn link`
+
+## run test:
+
+1. `npm run test`
+
+## run :
+
+1. `hackernews --posts 100`
 
 ## what library you use and why
 
-## desc
-
-- {
-  "title": "Web Scraping in 2016",
-  "uri": "https://franciskim.co/2016/08/24/dont-need-no-stinking-api-web-scraping-2016-beyond/",
-  "author": "franciskim",
-  "points": 133,
-  "comments": 80,
-  "rank": 1
-  },
-
-- Please also ensure that:
-  title and author are non empty strings not longer than 256 characters.
-  uri is a valid URI
-  points, comments and rank are integers >= 0.
-  Your solution is tested;
-  That there is robust input checking
+- axios, axios-mock-adapter: famous api request library and it has famous testing library
+- yargs: accept paramenters for command line application. with generic help and version options.
+- chai, chai-arrays: for unit testing
